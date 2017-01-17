@@ -1,2 +1,16 @@
-{{yield}}
+{{!-- {{yield}} --}}
+{{!-- {{menu.votes}} --}}
+{{menu.foodname}}
+<br>
+{{menu.fooddescription}}
+<br>
+{{menu.foodurl}}
+<br>
 {{menu.votes}}
+
+<form {{action 'createOrder' on='submit'}}>
+  {{input placeholder='Address' value=newOrder.destaddress}}
+  {{input placeholder='Quantity' value=newOrder.quantity}}
+  {{!-- {{input value=menu.id}} --}}
+  <button>create order</button>
+</form>

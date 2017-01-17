@@ -1,3 +1,17 @@
 {{!-- {{outlet}} --}}
 
+{{!-- {{model.foodname}}
+<br>
+{{model.fooddescription}}
+<br>
 {{model.foodurl}}
+<br>
+{{model.votes}} --}}
+
+{{!-- <img src={{model.foodurl}}> --}}
+
+{{!-- {{#each model as |menu|}} --}}
+  {{menu-order menu=model
+               createOrder='createOrder'}}
+
+{{!-- {{/each}} --}}
