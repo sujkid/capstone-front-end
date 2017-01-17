@@ -17,7 +17,8 @@ Router.map(function () {
   });
   // this.route('orders',{ path: 'menus/:menu_id' });
   this.route('menus/orders',{ path: 'menus/orders/:menu_id' });
- // this.route('menu/edit', { path: 'lists/:list_id/edit' });
+  // this.route('menu/edit', { path: 'lists/:list_id/edit' });
+  this.route('chefs');
 });
 
 export default Router;

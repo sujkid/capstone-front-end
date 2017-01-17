@@ -1,2 +1,183 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+// @import 'ember-side-menu';
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800");
+
+.food {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+*, *:after, *:before { box-sizing: border-box; }
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #444;
+  color: #fffce1;
+  font-family: "Raleway", Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+body > .ember-view, #outer-container {
+  height: 100%;
+}
+
+a {
+  color: #4e4a46;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #c94e50;
+  }
+}
+
+main {
+  background: #b4bad2;
+  height: 100vh;
+  padding: 3em 2em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.75em;
+  font-weight: 800;
+}
+
+.description {
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 1.2em auto 1em;
+  max-width: 20em;
+}
+
+.demo-buttons {
+  font-size: 1em;
+  margin: 2em auto 3em;
+  max-width: 1200px;
+  padding: 0 10em;
+
+  a {
+    background: #fffce1;
+    border-bottom-right-radius: 20px 50px;
+    border-bottom-left-radius: 20px 50px;
+    border-top-left-radius: 20px 50px;
+    border-top-right-radius: 20px 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: .75em;
+    padding: 1.35em 1.1em;
+    text-transform: uppercase;
+    width: 15em;
+
+    &.current-demo {
+      background: #c94e50;
+      color: #fffce1;
+    }
+  }
+}
+
+.side-button {
+  background: #fffce1;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8em;
+  font-weight: 800;
+  height: 2.5em;
+  letter-spacing: 1px;
+  width: 5em;
+  line-height: 2.5em;
+  text-transform: uppercase;
+
+  &.left {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  &.right {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &.active {
+    background: #c94e50;
+    color: #fffce1;
+  }
+}
+
+.side-menu-toggle {
+  height: 36px;
+  position: fixed;
+  top: 36px;
+  width: 36px;
+
+  &.left {
+    left: 36px;
+  }
+
+  &.right {
+    right: 36px;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  main {
+    font-size: 80%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    padding-top: 1em;
+  }
+
+  .demo-buttons {
+    max-width: 900px;
+    padding: 0 2em;
+  }
+}
+
+.side-menu {
+  background: #373a47;
+  padding: 20px;
+
+  nav {
+    height: 100%;
+  }
+
+  a {
+    color: #b8b7ad;
+
+    &:hover,
+    &:focus {
+      color: #c94e50;
+    }
+  }
+}
+
+.sm-item-list a {
+  display: block;
+  outline: none;
+  padding: .8em;
+
+  span {
+    font-weight: 700;
+    margin-left: 10px;
+  }
+}
+
+#slide {
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  .bm-menu {
+    font-size: 1.15em;
+    padding: 2.5em 1.5em 0;
+  }
+}
