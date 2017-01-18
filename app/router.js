@@ -19,6 +19,7 @@ Router.map(function () {
   this.route('menus/orders',{ path: 'menus/orders/:menu_id' });
   // this.route('menu/edit', { path: 'lists/:list_id/edit' });
   this.route('chefs');
+  this.route('myorders');
 });
 
 export default Router;
