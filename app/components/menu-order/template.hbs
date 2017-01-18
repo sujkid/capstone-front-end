@@ -9,7 +9,7 @@
 <br>
 {{menu.fooddescription}}
 <br>
-<button>{{menu.votes}}</button>
+<button {{action 'voteUp'}}>{{menu.votes}}</button>
 
 <form {{action 'createOrder' on='submit'}}>
   {{input placeholder='Address' value=newOrder.destaddress}}

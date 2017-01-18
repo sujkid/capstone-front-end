@@ -10,6 +10,12 @@ export default Ember.Route.extend({
       let order = this.get('store').createRecord('order', newOrder);
       console.log("inside the route create order, newOrder is " , order);
       order.save();
-    }
+    },
+    voteUp (menu) {
+      console.log('am i here??', menu.data.votes);
+      // menu.data.votes++;
+      menu.save()
+        .then()
+    },
   }
 });
