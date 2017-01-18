@@ -1,6 +1,13 @@
 {{!-- {{outlet}} --}}
 
 {{#each model as |myorder|}}
-  {{myorder.destaddress}}
+  {{myorder.foodname}}
+  <br>
+  {{myorder.fooddescription}}
+  <br>
+  {{myorder.quantity}}
+  <br>
+  {{myorder.date}}
+  <br>
   <br>
 {{/each}}
