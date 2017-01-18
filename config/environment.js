@@ -49,7 +49,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-  ENV.rootURL = '/lunchbox';
+  ENV.rootURL = '/capstone-front-end';
   ENV.locationType = 'hash';
   ENV.apiHost = 'https://guarded-eyrie-26324.herokuapp.com';
 }
