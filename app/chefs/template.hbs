@@ -1,5 +1,7 @@
 {{!-- {{outlet}} --}}
 
-{{#each model as |chef|}}
-  {{chef-profile chef=chef}}
-{{/each}}
+<div class='chefs'>
+  {{#each model as |chef|}}
+    {{chef-profile chef=chef}}
+  {{/each}}
+</div>

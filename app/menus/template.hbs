@@ -1,14 +1,15 @@
 {{!-- {{outlet}} --}}
 
-{{chef-menu/date selectDate='selectDate'}}
+{{!-- {{chef-menu/date selectDate='selectDate'}} --}}
 
 {{!-- <h4>Hey</h4> --}}
 
 {{!-- {{model.votes}} --}}
 {{!-- {{outlet}} --}}
 
-{{!-- {{#each model as |menu|}}
-  {{chef-menu/card menu=menu}}
-{{/each}} --}}
+{{!-- {{#each model as |menu|}} --}}
+  {{chef-menu/date menu=model
+                   selectDate='selectDate'}}
+{{!-- {{/each}} --}}
 
 {{outlet}}

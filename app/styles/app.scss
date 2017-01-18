@@ -1,11 +1,16 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
-// @import 'ember-side-menu';
+@import 'ember-side-menu';
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800");
 
 .food {
   max-height: 300px;
   max-width: 300px;
+  display: inline-block;
+}
+
+.chefs {
+  display: inline-block;
 }
 
 *, *:after, *:before { box-sizing: border-box; }

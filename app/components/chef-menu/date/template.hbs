@@ -1,11 +1,23 @@
 {{!-- {{yield}} --}}
 
-<select onchange={{action 'selectDate' value='target.value'}}>
+{{!-- <select onchange={{action 'selectDate' value='target.value'}}>
   <option value="0">Select a day</option>
   <option value="1">01/19</option>
   <option value="2">01/20</option>
   <option value="3">01/21</option>
   <option value="4">01/22</option>
-</select>
+</select> --}}
 
-{{outlet}}
+<select onchange={{action 'selectDate' value='target.value'}}>
+{{!-- hi
+{{menu.date}}
+hi --}}
+<option>Select a day</option>
+  {{#each menu as |menu|}}
+    <option value={{menu.id}}>
+      {{menu.date}}
+   </option>
+  {{/each}}
+<</select>
+
+{{!-- {{outlet}} --}}

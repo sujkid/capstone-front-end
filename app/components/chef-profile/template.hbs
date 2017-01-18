@@ -2,4 +2,8 @@
 
 {{!-- {{chef.profileurl}} --}}
 
-<img class='food' src={{chef.profileurl}}>
+<div class='chefs'>
+  {{#link-to 'menus'}}
+    <img class='food' src={{chef.profileurl}}>
+  {{/link-to}}
+</div>
