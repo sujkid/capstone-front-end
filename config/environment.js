@@ -51,7 +51,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
   ENV.rootURL = '/lunchbox';
   ENV.locationType = 'hash';
-  ENV.apiHost = 'http://localhost/4741';
+  ENV.apiHost = 'https://guarded-eyrie-26324.herokuapp.com';
 }
 
   return ENV;
