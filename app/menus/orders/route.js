@@ -14,8 +14,7 @@ export default Ember.Route.extend({
     voteUp (menu) {
       console.log('am i here??', menu.data.votes);
       // menu.data.votes++;
-      menu.save()
-        .then()
+      menu.save();
     },
   }
 });
