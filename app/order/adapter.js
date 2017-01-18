@@ -3,7 +3,7 @@
 // export default DS.JSONAPIAdapter.extend({
 // });
 
-import ApplicationAdapter from 'ga-wdi-boston.ember-auth/application/adapter';
+import ApplicationAdapter from 'lunchbox/application/adapter';
 
 export default ApplicationAdapter.extend({
   createRecord(store, type, record) {

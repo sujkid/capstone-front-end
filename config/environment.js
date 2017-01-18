@@ -3,7 +3,7 @@
 module.exports = function (environment) {
   'use strict';
   const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+    modulePrefix: 'lunchbox',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -49,8 +49,10 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'hash';
-  }
+  ENV.rootURL = '/lunchbox';
+  ENV.locationType = 'hash';
+  ENV.apiHost = 'http://localhost/4741';
+}
 
   return ENV;
 };
