@@ -1,11 +1,14 @@
 {{!-- {{outlet}} --}}
 
 {{#each model as |myorder|}}
-  {{myorder.foodname}}
+  {{!-- {{myorder.foodname}}
   <br>
   {{myorder.quantity}}
   <br>
   {{myorder.date}}
   <br>
-  <br>
+  <br> --}}
+
+  {{my-order myorder=myorder
+             cancelOrder='cancelOrder'}}
 {{/each}}
