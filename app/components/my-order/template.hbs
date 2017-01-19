@@ -8,13 +8,14 @@
 {{myorder.date}}
 <br>
 <br> --}}
+<table class="table"><tr><td>Name</td><td>Quantity</td><td>Price(each)</td><td>Date</td><td>Cancel</td></tr>
 
-{{myorder.foodname}}
-<br>
-{{myorder.quantity}}
-<br>
-{{myorder.date}}
-<br>
-<button {{action 'cancelOrder' myorder.id}}>cancel order</button>
-<br>
-<br>
+<tr>
+<td> {{myorder.foodname}}</td>
+<td> {{myorder.quantity}} </td>
+<td> ${{myorder.price}} </td>
+<td> {{myorder.date}} </td>
+
+<td><button {{action 'cancelOrder' myorder.id}}>cancel order</button></td>
+</tr>
+</table>

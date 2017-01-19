@@ -1,20 +1,27 @@
 {{!-- {{yield}} --}}
 {{!-- {{menu.votes}} --}}
-<div>
+{{!-- <table><tr><td>Name</td><td>Description</td><td>Price</td> --}}
   <img class='food' src={{menu.foodurl}}>
-  {{!-- {{menu.foodurl}} --}}
-</div>
-<br>
-{{menu.foodname}}
+<h4>{{menu.foodname}}</h4>
 <br>
 {{menu.fooddescription}}
 <br>
-<button {{action 'voteUp'}}>{{menu.votes}}</button>
+${{menu.price}}
+<br>
+<br>
+{{!-- <button {{action 'voteUp'}}>Like</button>&nbsp;&nbsp;&nbsp;{{menu.votes}} --}}
+<img class='like' src='/assets/images/like.jpeg' {{action 'voteUp'}}>&nbsp;&nbsp;&nbsp;{{menu.votes}}
+<br>
+<br>
 
 <form {{action 'createOrder' on='submit'}}>
+  {{input type="number" min="1" max="10" placeholder='Quantity' value=newOrder.quantity}}
+  <br>
+
   {{input placeholder='Address' value=newOrder.destaddress}}
+  <br>
   {{!-- {{input placeholder='Quantity' value=newOrder.quantity}} --}}
-  {{input type="number" placeholder='Quantity' value=newOrder.quantity}}
+
   {{!-- <select value=newOrder.quantity>
     <option value="1">1</option>
     <option value="2">2</option>

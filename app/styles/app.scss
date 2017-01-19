@@ -4,10 +4,14 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800");
 
 .food {
-  max-height: 300px;
-  max-width: 300px;
+  max-height: 500px;
+  max-width: 500px;
   display: inline-block;
 }
+
+// .quan {
+//   size: 35;
+// }
 
 .chefs {
   display: inline-block;
@@ -20,8 +24,10 @@ html {
 }
 
 body {
-  background: #444;
-  color: #fffce1;
+  background: #e7dfdd;
+  // background-image: url('/assets/images/background1.jpeg');
+  // background-size: 100%;
+  color: #000;
   font-family: "Raleway", Arial, sans-serif;
   height: 100%;
   margin: 0;
@@ -51,6 +57,11 @@ main {
 h1 {
   font-size: 3.75em;
   font-weight: 800;
+}
+
+.like {
+  height: 40px;
+  width: 60px;
 }
 
 .description {
@@ -131,6 +142,32 @@ h1 {
   }
 }
 
+.about {
+  width: 700px;
+  padding: 10px;
+  margin-top: 200px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+.table{
+
+  tr:hover {background-color: #f5f5f5};
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+     border: 1px solid black;
+     height: 50px;
+     width: 100px;
+
+}
+}
+
+// .container-fluid {
+//   background-color: #1C2841;
+// }
+
 @media screen and (max-width: 40em) {
   main {
     font-size: 80%;
@@ -185,4 +222,15 @@ h1 {
     font-size: 1.15em;
     padding: 2.5em 1.5em 0;
   }
+}
+
+button {
+    background-color: #565656; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

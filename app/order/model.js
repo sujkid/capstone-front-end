@@ -5,5 +5,6 @@ export default DS.Model.extend({
   quantity: DS.attr('number'),
   foodname: DS.attr('string'),
   date: DS.attr('date'),
+  price: DS.attr('number'),
   menu: DS.belongsTo('menu'),
 });

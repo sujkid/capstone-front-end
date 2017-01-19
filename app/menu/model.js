@@ -8,4 +8,5 @@ export default DS.Model.extend({
   foodurl: DS.attr('string'),
   date: DS.attr('string'),
   user_id: DS.hasMany('menus'),
+  price: DS.attr('number'),
 });
