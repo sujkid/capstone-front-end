@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   },
   actions: {
     createOrder () {
-      console.log('order create', this.get('newOrder'));
+      // console.log('order create', this.get('newOrder'));
       let data = this.get('newOrder');
       // console.log('data is ', data);
       if(!this.get('newOrder.destaddress') || !this.get('newOrder.quantity')) {
@@ -17,9 +17,9 @@ export default Ember.Component.extend({
       this.sendAction('createOrder', data);
     },
     voteUp (menu) {
-      console.log('vote for meeee', this.get('menu.vote'));
+      // console.log('vote for meeee', this.get('menu.vote'));
       let data = this.get('menu');
-      console.log(data);
+      // console.log(data);
       this.sendAction( 'voteUp', data );
     },
   },

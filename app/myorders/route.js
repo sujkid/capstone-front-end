@@ -7,7 +7,7 @@ export default Ember.Route.extend({
   },
   actions : {
     cancelOrder (myorder) {
-      console.log('myorder');
+      // console.log('myorder');
       myorder.destroyRecord();
     },
   },

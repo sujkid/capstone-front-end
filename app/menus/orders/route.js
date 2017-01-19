@@ -6,13 +6,13 @@ export default Ember.Route.extend({
   },
   actions: {
     createOrder(newOrder) {
-      console.log('hey, i am going to create an order', newOrder);
+      // console.log('hey, i am going to create an order', newOrder);
       let order = this.get('store').createRecord('order', newOrder);
-      console.log("inside the route create order, newOrder is " , order);
+      // console.log("inside the route create order, newOrder is " , order);
       order.save();
     },
     voteUp (menu) {
-      console.log('am i here??', menu.data.votes);
+      // console.log('am i here??', menu.data.votes);
       // menu.data.votes++;
       menu.save();
     },
