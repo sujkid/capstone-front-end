@@ -1,5 +1,3 @@
-Lunch Box
-
 # Lunch Box
 
 The app that sorta taught me ember.
