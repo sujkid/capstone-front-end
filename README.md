@@ -4,7 +4,9 @@ Lunch Box
 
 The app that sorta taught me ember.
 My capstone for GA's wdi.
+
 Check it out <a href="https://sujkid.github.io/capstone-front-end/">here</a>
+
 <a href="https://github.com/sujkid/capstone-back-end">The back-end repo</a>
 
 ## Technologies

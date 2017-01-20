@@ -20,7 +20,7 @@ export default Ember.Component.extend({
       data.menu = this.get('menu'); // identifying which menu the order belongs to
       this.sendAction('createOrder', data);
     },
-    voteUp (menu) {
+    voteUp () {
       // console.log('vote for meeee', this.get('menu.vote'));
       let data = this.get('menu');
       // console.log(data);
