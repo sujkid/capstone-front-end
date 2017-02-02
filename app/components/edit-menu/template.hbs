@@ -1,0 +1,20 @@
+{{#each menu as |menu|}}
+<form {{action 'editMenu' on='submit'}}>
+  {{menu.foodname}}
+  <br>
+  {{menu.fooddescription}}
+  <br>
+  {{menu.foodurl}}
+  <br>
+  {{menu.date}}
+  <br>
+
+  $ {{menu.price}}
+  <br>
+  <button>Edit</button>
+  <button {{action 'deleteMenu'}}>Delete</button>
+</form>
+<br>
+<br>
+<br>
+{{/each}}
