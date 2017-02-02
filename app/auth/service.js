@@ -5,11 +5,13 @@ export default Ember.Service.extend({
   ajax: Ember.inject.service(),
   credentials: storageFor('auth'),
   isAuthenticated: Ember.computed.bool('credentials.token'),
+  isChef: Ember.computed.equal('credentials.email', 'admin@boogie.com'),
 
   signUp (credentials) {
     return this.get('ajax').post('/sign-up', {
       data: {
         credentials: {
+          // usertype: credentials.usertype,
           email: credentials.email,
           password: credentials.password,
           password_confirmation: credentials.passwordConfirmation,
@@ -31,6 +33,7 @@ export default Ember.Service.extend({
       this.get('credentials').set('id', result.user.id);
       this.get('credentials').set('email', result.user.email);
       this.get('credentials').set('token', result.user.token);
+      // this.get('credentials').set('usertype', result.user.usertype);
     });
   },
 

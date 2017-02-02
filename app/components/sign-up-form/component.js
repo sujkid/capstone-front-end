@@ -14,5 +14,9 @@ export default Ember.Component.extend({
     reset () {
       this.set('credentials', {});
     },
+
+    // selectUserType (usertypevalue) {
+    //   this.get('credentials').set('usertype', usertypevalue);
+    // }
   },
 });

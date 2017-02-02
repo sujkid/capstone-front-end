@@ -1,0 +1,27 @@
+<form {{action 'saveMenu' on='submit'}}>
+  {{input placeholder='Food Name'
+          value=menu.foodname}}
+  <br>
+
+  {{textarea rows="4" cols="86"
+             placeholder='Food Description'
+             value=menu.fooddescription}}
+  <br>
+  <br>
+
+  {{input placeholder='Food Url'
+          value=menu.foodurl}}
+  <br>
+
+  {{input type="date"
+          placeholder='Date'
+          value=menu.date}}
+  <br>
+
+  {{input placeholder='$ Price'
+          value=menu.price}}
+  <br>
+
+  <button>save</button>
+  <button {{action 'cancel'}}>cancel</button>
+</form>

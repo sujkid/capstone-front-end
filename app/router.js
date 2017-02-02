@@ -20,6 +20,8 @@ Router.map(function () {
   // this.route('menu/edit', { path: 'lists/:list_id/edit' });
   this.route('chefs');
   this.route('myorders');
+  this.route('addmenu');
+  this.route('editmenu');
 });
 
 export default Router;

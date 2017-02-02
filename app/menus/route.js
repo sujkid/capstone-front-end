@@ -2,17 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model () {
-    return this.get('store').findAll('menu');
+    return this.get('store').findAll('menu', {reload: true})
+      .then(menus=>menus.sortBy('date'));
   },
   actions: {
     selectDate (id) {
-     // this.set(menues,id);
-    // let data = this.get('store').findRecord('menu', id);
-  //    console.log('data is ', data);
-    //return this.get('store').findRecord('menu', id)
-        // .then(this.transitionTo('menu'));
-        // debugger;
-        this.transitionTo('menus/orders', id);
+      this.transitionTo('menus/orders', id);
     }
   }
 });

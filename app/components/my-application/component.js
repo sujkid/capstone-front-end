@@ -7,6 +7,7 @@ export default Ember.Component.extend({
 
   user: Ember.computed.alias('auth.credentials.email'),
   isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
+  isChef: Ember.computed.alias('auth.isChef'),
 
   actions: {
     signOut () {

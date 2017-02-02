@@ -1,3 +1,18 @@
+{{!-- {{user-type usertype=credentials.usertype}} --}}
+
+{{!-- <label for="usertype">User Type</label>
+{{input type="usertype"
+        id="usertype"
+        placeholder="usertype"
+        value=credentials.usertype}}
+
+<select onchange={{action 'selectUserType' value='target.value'}}>
+  <option value='chef'>Chef</option>
+  <option value='customer'>Customer</option>
+</select> --}}
+
+
+{{!-- {{user-type usertype=credentials.usertype}} --}}
 {{email-input email=credentials.email}}
 {{password-input password=credentials.password}}
 {{password-confirmation-input password=credentials.passwordConfirmation}}

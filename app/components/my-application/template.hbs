@@ -9,6 +9,10 @@
         {{!-- <li>{{#link-to "chefs"}}Chefs{{/link-to}}</li> --}}
         <li>{{#link-to "myorders"}}Your Orders{{/link-to}}</li>
         {{/if}}
+        {{#if isChef}}
+        <li>{{#link-to "addmenu"}}Add Menu{{/link-to}}</li>
+        <li>{{#link-to "editmenu"}}Edit Menu{{/link-to}}</li>
+        {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
@@ -35,15 +39,15 @@
 
 {{#if isAuthenticated}}
 {{else}}
-  {{!-- <div class='about'>
-    <p>
+  <div class='about'>
+    {{!-- <p>
       LunchBox changes the way you experience home-delivered food! We bring you an
       awesome gourmet food experience , from the kitchens of talented  chefs in your
       area, who are encouraged to put their own creations on the menu as specialty
       items, which usually highlight hyper-local, seasonal fare.
       With food made from 100% non-GMO, organic ingredients, and clean proteins, we
       offer you tons of great options for lunch or dinner!
-      Sign up to experience one of a kind culinary journey.
-    </p>
-  </div> --}}
+      Sign up to experience a one of a kind culinary journey.
+    </p> --}}
+  </div>
 {{/if}}
